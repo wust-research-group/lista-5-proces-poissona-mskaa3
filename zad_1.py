@@ -25,6 +25,8 @@ num_events, event_times = generate_poisson_events(5, 5)
 # plt.title(f'Poisson Process Simulation (λ = {rate}, Duration = {time_duration} seconds)\n')
 # plt.ylabel('N_t')
 # plt.xlabel('Time')
+# plt.grid(True)
+# plt.show()
 
 num_time_points = 100
 time_space = np.linspace(0, time_duration, num_time_points)
@@ -33,3 +35,5 @@ result = [get_N(event_times, t) for t in time_space]
 # plt.title(f'Distribution of N_t value')
 # plt.ylabel('Count')
 # plt.xlabel('N_t')
+# plt.grid(True)
+# plt.show()
